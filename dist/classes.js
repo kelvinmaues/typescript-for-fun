@@ -30,6 +30,27 @@ var CharAccount = /** @class */ (function (_super) {
         _this.level = level;
         return _this;
     }
+    Object.defineProperty(CharAccount.prototype, "getLevel", {
+        get: function () {
+            return this.level;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CharAccount.prototype, "getNickname", {
+        get: function () {
+            return this.nickname;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CharAccount.prototype, "setNickname", {
+        set: function (nickname) {
+            this.nickname = nickname;
+        },
+        enumerable: false,
+        configurable: true
+    });
     CharAccount.prototype.logCharDetails = function () {
         console.log("The player " + this.name + " has nickname " + this.nickname + " at level " + this.level);
     };
@@ -43,3 +64,5 @@ var ruth = new CharAccount("Ruth", 25, "rutinha", 10);
 console.log(ruth);
 ruth.logCharDetails();
 console.log(ruth.level);
+ruth.setNickname = 'petinha';
+console.log(ruth.getNickname);

@@ -22,6 +22,18 @@ class CharAccount extends UserAccount {
     this.level = level;
   }
 
+  get getLevel() {
+    return this.level;
+  }
+
+  get getNickname() {
+    return this.nickname;
+  }
+
+  set setNickname(nickname: string) {
+    this.nickname = nickname;
+  }
+
   logCharDetails(): void {
     console.log(
       `The player ${this.name} has nickname ${this.nickname} at level ${this.level}`
@@ -37,4 +49,7 @@ kelvin.logDetails();
 const ruth = new CharAccount("Ruth", 25, "rutinha", 10);
 console.log(ruth);
 ruth.logCharDetails();
-console.log(ruth.level)
+console.log(ruth.level);
+
+ruth.setNickname = 'petinha'
+console.log(ruth.getNickname);
