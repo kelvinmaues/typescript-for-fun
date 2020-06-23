@@ -4,6 +4,8 @@ My codes for learning TypeScript
 
 ## Topics covered
 
+[Course on Youtube from Willian Justen](https://www.youtube.com/playlist?list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_)
+
 - [Types](./types.ts)
 - [Types Inference](./type_inference.ts)
 - [Types Aliases and Union](./type_aliases_and_union.ts)
