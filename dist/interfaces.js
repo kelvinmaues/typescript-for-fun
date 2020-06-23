@@ -7,9 +7,9 @@ var gameTLOU = {
     title: "The Last of Us",
     description: "The best game in the world",
     genre: "action",
-    platform: ["PS3", "PS4"],
     getSimilars: function (title) {
         console.log("Similar games to " + title + ": ...");
     },
 };
+console.log(gameTLOU.genre);
 gameTLOU.getSimilars('Metro');
