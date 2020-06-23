@@ -12,4 +12,14 @@ var gameTLOU = {
     },
 };
 console.log(gameTLOU.genre);
-gameTLOU.getSimilars('Metro');
+if (gameTLOU.getSimilars) {
+    gameTLOU.getSimilars("Metro");
+}
+var leftBehind = {
+    title: "The Last of Us - Left Behind",
+    description: "You play as Ellie before the original game",
+    genre: "action",
+    platform: ["PS4"],
+    originalGame: gameTLOU,
+    newContent: ["new characters", "3 hours story"]
+};

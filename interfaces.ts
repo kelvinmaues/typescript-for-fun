@@ -8,7 +8,7 @@ interface Game {
   description: string;
   readonly genre: string;
   platform?: string[];
-  getSimilars: (title: string) => void;
+  getSimilars?: (title: string) => void;
 }
 
 const gameTLOU: Game = {
@@ -20,5 +20,24 @@ const gameTLOU: Game = {
   },
 };
 
-console.log(gameTLOU.genre)
-gameTLOU.getSimilars('Metro')
+console.log(gameTLOU.genre);
+if (gameTLOU.getSimilars) {
+  gameTLOU.getSimilars("Metro");
+}
+
+// Extending an interface to another
+interface DLC extends Game {
+  originalGame: Game;
+  newContent: string[];
+}
+
+const leftBehind: DLC = {
+  title: "The Last of Us - Left Behind",
+  description: "You play as Ellie before the original game",
+  genre: "action",
+  platform: ["PS4"],
+  originalGame: gameTLOU,
+  newContent: ["new characters", "3 hours story"]
+}
+
+
