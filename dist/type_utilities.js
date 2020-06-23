@@ -10,6 +10,7 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+//// Readonly as utility
 var todo = {
     title: "Assistir Dark de novo",
     description: "Relembrar os detalhes",
@@ -18,8 +19,17 @@ var todo = {
 console.log(todo);
 // todo.completed = true;
 console.log(todo);
+//// Partial as utility
 function updateTodo(todo, fieldsToUpdate) {
     return __assign(__assign({}, todo), fieldsToUpdate);
 }
 var todo2 = updateTodo(todo, { completed: true });
 console.log(todo2);
+var todo3 = {
+    title: "Fechar Ghost of Tsushima",
+    completed: false,
+};
+var todo4 = {
+    completed: false,
+    title: "Something",
+};
