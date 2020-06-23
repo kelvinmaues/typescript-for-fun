@@ -1,4 +1,4 @@
-class UserAccount {
+abstract class UserAccount {
   name: string;
   protected age: number;
 
@@ -41,10 +41,10 @@ class CharAccount extends UserAccount {
   }
 }
 
-const kelvin = new UserAccount("Kelvin", 26);
-console.log(kelvin);
-// console.log(kelvin.age);
-kelvin.logDetails();
+// const kelvin = new UserAccount("Kelvin", 26);
+// console.log(kelvin);
+// // console.log(kelvin.age);
+// kelvin.logDetails();
 
 const ruth = new CharAccount("Ruth", 25, "rutinha", 10);
 console.log(ruth);

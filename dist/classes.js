@@ -56,10 +56,10 @@ var CharAccount = /** @class */ (function (_super) {
     };
     return CharAccount;
 }(UserAccount));
-var kelvin = new UserAccount("Kelvin", 26);
-console.log(kelvin);
-// console.log(kelvin.age);
-kelvin.logDetails();
+// const kelvin = new UserAccount("Kelvin", 26);
+// console.log(kelvin);
+// // console.log(kelvin.age);
+// kelvin.logDetails();
 var ruth = new CharAccount("Ruth", 25, "rutinha", 10);
 console.log(ruth);
 ruth.logCharDetails();
