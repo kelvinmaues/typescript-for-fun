@@ -30,12 +30,16 @@ var CharAccount = /** @class */ (function (_super) {
         _this.level = level;
         return _this;
     }
+    CharAccount.prototype.logCharDetails = function () {
+        console.log("The player " + this.name + " has nickname " + this.nickname + " at level " + this.level);
+    };
     return CharAccount;
 }(UserAccount));
 var kelvin = new UserAccount("Kelvin", 26);
 console.log(kelvin);
-console.log(kelvin.age);
+// console.log(kelvin.age);
 kelvin.logDetails();
 var ruth = new CharAccount("Ruth", 25, "rutinha", 10);
 console.log(ruth);
-ruth.logDetails();
+ruth.logCharDetails();
+console.log(ruth.level);
