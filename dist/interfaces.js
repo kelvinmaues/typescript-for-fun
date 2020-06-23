@@ -21,5 +21,14 @@ var leftBehind = {
     genre: "action",
     platform: ["PS4"],
     originalGame: gameTLOU,
-    newContent: ["new characters", "3 hours story"]
+    newContent: ["new characters", "3 hours story"],
 };
+// Implementing a class with an 'interface'
+var CreateGame = /** @class */ (function () {
+    function CreateGame(t, d, g) {
+        this.title = t;
+        this.description = d;
+        this.genre = g;
+    }
+    return CreateGame;
+}());

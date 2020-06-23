@@ -37,7 +37,19 @@ const leftBehind: DLC = {
   genre: "action",
   platform: ["PS4"],
   originalGame: gameTLOU,
-  newContent: ["new characters", "3 hours story"]
+  newContent: ["new characters", "3 hours story"],
+};
+
+// Implementing a class with an 'interface'
+
+class CreateGame implements Game {
+  title: string;
+  description: string;
+  genre: string;
+
+  constructor(t: string, d: string, g: string) {
+    this.title = t;
+    this.description = d;
+    this.genre = g;
+  }
 }
-
-
